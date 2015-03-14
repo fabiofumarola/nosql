@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie lt-ie9 lt-ie8 lt-ie7 ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<!-- @font-face fonts -->
+<link rel="stylesheet" href="assets/css/nexa.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60747356-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript" src="assets/js/required.js"></script>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<title>Designing Data Bases with NoSql Data Models</title>
+
+</head>
+
+<body>
+  <!-- Fullscreen Container -->
+	<div class="fullscreen-table">
+		<div class="fullscreen-row header">
+      <header id="zw-header" class="main-header">
+        <div class="main-header-wrap clearfix">
+          <div class="page-header" style="text-align: center">
+              <h1>Designing Data Bases with Advanced Data Models</h1>
+              <h4>"How to use NoSql Databases in the right way"</h4>
+          </div>
+          <div class="text-center">
+  					<a href="http://www.di.uniba.it/~kdde"><img class="logo-header" src="images/kdde_logo.png" alt="Knowledge Discover and Data Engineering Group"/><a>
+            <a href="http://www.datatoknowledge.it"><img class="logo-header" src="images/dtk.png"/></a>
+            <a href="http://www.uniba.it/ricerca/dipartimenti/informatica"><img class="logo-header" src="images/logo_uniba.gif"/> </a>
+  				</div>
+          <nav id="zw-nav" class="nav">
+            <ul>
+              <li><a id="btn-about" href="#home">Home</a></li>
+              <li><a id="btn-instructor" href="#instructor">Instructor</a></li>
+              <li><a id="btn-syllabus" href="#syllabus">Syllabus</a></li>
+              <li><a id="btn-notes" href="#notes">Notes</a></li>
+              <li><a id="btn-assignment" href="#assignment">Assignment</a></li>
+              <li><a id="btn-links" href="#links">Links</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+		</div>
+		<div id="zw-slider" class="fullscreen-row slider">
+			<div class="slider-block">
+				<div class="cycle-slider">
+					<div class="cycle-next"></div>
+					<div class="cycle-prev"></div>
+
+					<div class="slide-wrap">
+						<div class="slide">
+							<img src="images/slider/one.png" alt="">
+						</div>
+						<div class="caption-box">
+							<div class="caption">
+								<span class="slide-text">Learn how to use HBase and Hadoop in the right way</span>
+							</div>
+						</div>
+					</div>
+					<div class="slide-wrap">
+						<div class="slide">
+							<img src="images/slider/two.png" alt="">
+						</div>
+						<div class="caption-box">
+							<div class="caption">
+								<span class="slide-text">Learn how to set up a Redis cluster on Docker</span>
+							</div>
+						</div>
+					</div>
+					<div class="slide-wrap">
+						<div class="slide">
+							<img src="images/slider/three.png" alt="">
+						</div>
+						<div class="caption-box">
+							<div class="caption">
+								<span class="slide-text">Learn how to store data into a document store</span>
+							</div>
+						</div>
+					</div>
+					<div class="slide-wrap">
+						<div class="slide">
+							<img src="images/slider/four.png" alt="">
+						</div>
+						<div class="caption-box">
+							<div class="caption">
+								<span class="slide-text">Learn why Graph Databases are awesome</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Fullscreen Container-->
+
+	<!-- Section Block (About Us) -->
+	<section id="home" class="section-block">
+		<h1 class="section-title">Home</h1>
+
+		<div class="container">
+			<!-- About Text -->
+			<div class="row">
+				<div class="span12">
+					<p class=""><span class="dropcap">L</span>e tecnologie dell'informazione ci hanno condotto in un'era dove la produzione,
+            la condivisione e la fruizione di informazioni fanno ormai parte della quotidianità e di cui spesso siamo attori quasi inconsapevoli:
+            &egrave; ormai pressoch&eacute; inevitabile non lasciare una traccia digitale di molte delle azioni che compiamo tutti i giorni;
+            pensiamo ad esempio a contenuti digitali quali foto, video, blog post e a tutto ciò che ruota attorno ai social network (Facebook e Twitter in particolare).
+            A questo va aggiunto che con “l’internet delle cose”, assistiamo a un incremento di dispositivi come orologi, bracciali,
+            termostati e mille altri oggetti che sono in grado di connettersi alla rete e quindi generare grandi flussi di dati.
+            Questa esplosione di dati giustifica la nascita, nel mondo dell’informatica del termine Big Data: esso indica i dati prodotti
+            in grande quantità, con notevole rapidità e nei formati più diversi, la cui elaborazione richiede tecnologie e risorse che
+            vanno ben al di là dei sistemi convenzionali di gestione ed immagazzinamento dei dati.
+            &Egrave; subito chiaro che, 1) i modelli di memorizzazione dei dati basati sul modello relazionale e,
+            2) i sistemi di elaborazione basati su stored procedure e su griglie di computazioni non sono applicabili in questi contesti.
+            Per quanto riguarda il punto 1, gli RDBMS, ampiamente utilizzati per una gran variet&aacute; di applicazioni, presentano alcuni
+            problemi quando la mole dei dati cresce oltre certi limiti. La scalabilità e i costi di implementazione sono soltanto una parte degli svantaggi:
+            molto spesso, infatti, quando ci si trova di fronte alla gestione di big data, anche la variabilità, ovvero la mancanza di una struttura fissa,
+            rappresenta una problematica di rilievo. Ciò ha dato una spinta allo sviluppo dei database NoSQL.
+            I sito web <a href="http://nosql-database.org">NoSql Databases</a> definisce i database NoSQL come
+            “Next Generation Databases mostly addressing some of the points: being non-relational, distributed, open source and horizontally scalable”.
+            Questi database sono: distribuiti, open source, scalabili orizzontalmente,
+            privi di uno schema prefissato (key-value, column-oriented, document-based e graph-based),
+            facilmente replicabili, privi delle proprietà ACID e in grado di gestire grandi moli di dati.
+            Questi database sono integrati o integrabili con strumenti di elaborazione basati sul paradigma MapReduce proposto da Google nel 2009.
+            MapReduce con il framework open source Hadoop rappresentano il nuovo modello per l’elaborazione distribuita di grandi moli di dati
+            che va a soppiantare tecniche basate su stored procedure e griglie computazionali (punto 2).
+            Il modello relazionale insegnato nei corsi di base di progettazione di database,
+            presenta molteplici limiti rispetto alle esigenze poste dalle nuove applicazioni
+            basate sui Big Data e che utilizzano database NoSQL per memorizzare i dati e MapReduce per elaborare grosse moli di dati.
+          </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="span6">
+					<h3>Questo insegnamento mira a</h3>
+					<ul class="check-list">
+						<li>introdurre i diversi modelli di database NoSQL</li>
+						<ul class="unstyled">
+							<li class="inner-li">Key-Value: <a href="http://riak.basho.com/">Riak</a>, <a href="http://redis.io/">Redis</a>, <a href="http://www.aerospike.com/">Aereospike</a>, <a href="https://github.com/google/leveldb">LevelDB</a></li>
+              <li class="inner-li">Colum-Oriented: <a href="http://hbase.apache.org/ca">HBase</a>, <a href="http://cassandra.apache.org/">Cassandra</a> e <a href="http://hypertable.com/">Hypertable</a></li>
+              <li class="inner-li">Document-Oriented: <a href="http://www.mongodb.org/">MongoDB</a>, <a href="http://couchdb.apache.org/">CouchDB</a>, <a href="http://www.couchbase.com/">CouchBase</a>, <a href="http://www.rethinkdb.com/">RethinkDB </a> </li>
+              <li class="inner-li">Graph-Based: <a href="http://neo4j.com/">Neo4J</a>, <a href="https://github.com/thinkaurelius/titan">TitanDB</a> , <a href="http://www.orientechnologies.com/">OrientDB</a> e <a href="https://github.com/twitter/flockdb">Twitter FlockDB</a></li>
+              <li class="inner-li">Index-Based: <a href="https://www.elastic.co/">Elasticsearch</a></li>
+						</ul>
+						<li>sviluppare competenze di progettazione e sviluppo di basi di dati con modelli di nuova generazione basati su NoSQL</li>
+						<ul class="unstyled">
+							<li class="inner-li">Aggregated Data Model</li>
+						</ul>
+						<li>sviluppare competenze per l’elaborazione di Big Data utilizzando MapReduce and Spark</li>
+						<li>setup di servizi elastici e scalabili: <a href="">Docker</a>, <a href="">Vagrant</a> e <a href="">Mesos</a></li>
+            <li>sviluppare codice in team: <a href="">Git</a>, <a href="">SBT</a> e <a href="">Maven</a></li>
+						<li>Bere tanto caff&egrave; <i class="fa fa-smile-o"></i></li>
+					</ul>
+				</div>
+				<div class="span6">
+					<h3>Competenze</h3>
+          <div class="skill">
+            <h6 class="name">Data Bases Design</h6>
+            <div class="progress progress-info progress-striped progress-mini">
+              <div class="bar" style="width: 100%"></div>
+            </div>
+          </div>
+					<div class="skill">
+						<h6 class="name">NoSQL Databases</h6>
+						<div class="progress progress-info progress-striped progress-mini">
+							<div class="bar" style="width: 90%"></div>
+						</div>
+					</div>
+          <div class="skill">
+            <h6 class="name">Big Data</h6>
+            <div class="progress progress-success progress-striped progress-mini">
+              <div class="bar" style="width: 80%"></div>
+            </div>
+          </div>
+					<div class="skill">
+						<h6 class="name">Database as (Micro) Service</h6>
+						<div class="progress progress-info progress-striped progress-mini">
+							<div class="bar" style="width: 70%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<h6 class="name">Data Analytics</h6>
+						<div class="progress progress-info progress-striped progress-mini">
+							<div class="bar" style="width: 40%"></div>
+						</div>
+					</div>
+					<div class="skill">
+						<h6 class="name">Docker containers</h6>
+						<div class="progress progress-info progress-striped progress-mini">
+							<div class="bar" style="width: 20%"></div>
+						</div>
+					</div>
+          <div class="skill">
+            <h6 class="name">Vagrant</h6>
+            <div class="progress progress-info progress-striped progress-mini">
+              <div class="bar" style="width: 15%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h6 class="name">Git</h6>
+            <div class="progress progress-info progress-striped progress-mini">
+              <div class="bar" style="width: 15%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h6 class="name">Sbt, Maven</h6>
+            <div class="progress progress-info progress-striped progress-mini">
+              <div class="bar" style="width: 15%"></div>
+            </div>
+          </div>
+          <div class="skill">
+            <h6 class="name">Scala Lang</h6>
+            <div class="progress progress-info progress-striped progress-mini">
+              <div class="bar" style="width: 15%"></div>
+            </div>
+          </div>
+				</div>
+			</div>
+			<!-- End About Text -->
+		</div>
+
+	</section>
+
+
+  <!-- Section Block (Team) -->
+  <section id="instructor" class="section-block">
+
+    <h2 class="section-title">Instructor</h2>
+
+    <div class="container">
+
+      <!-- Team -->
+      <div class="row">
+        <div class="span4">
+          <div class="team">
+            <div class="team-photo">
+              <img src="assets/img/lazy_team.png" data-original="images/team/fabio.jpg" alt="Fabio Fumarola">
+            </div>
+            <div class="team-info">
+              <span class="name"><script type="text/javascript">linkedin('pub/fabio-fumarola/7/540/605', 'Fabio Fumarola')</script></span>
+              <span class="role">Instructor</span>
+            </div>
+            <div class="team-text">
+              Dottore di Ricerca in Informatica. Esperto in Web Mining e Big Data; Analista, Progettista e Sviluppatore Software. Esperto in NoSQL.
+            </div>
+
+          </div>
+        </div>
+        <div class="span8">
+          <div class="">
+            <div class="">
+              Dottore di Ricerca in Informatica. Esperto in Web Mining e Big Data; Analista, Progettista e Sviluppatore Software. Esperto in NoSQL.
+            </div>
+            <div class="title">Personal Information</div>
+            <ul>
+                <li>Email: fabio.fumarola@gmail.com, fabio.fumarola@uniba.it</li>
+                <li>Phone: 080 544 32 69</li>
+                <li>Address: Via E. Orabona 4, Department of Informatics, 5 floor room 509</li> <!--  -->
+            </ul>
+            <hr>
+            <div class="title">Technical Skills</div>
+            <ul>
+                <li>Operating systems: Linux (mostly Ubuntu), Mac Os X</li>
+                <li>Main programming languages: Scala, Java</li>
+                <li>Other programming, scripting and query languages: SQL, Ruby, HTML/XML, CSS, Node.js, R, Python</li> <!--  -->
+                <li>Frameworks and libraries: Akka.io, JUnit, Apache Hadoop, Apache Spark, Play2, AngularJS,... </li>
+                <li>Other software: Maven3, Git, SBT, Gradle, Perforce, Hansoft, Apache Tomcat, Eclipse, Netty, ...</li>
+                <li>Other Tools: NLTK, Weka, Moa, HBase, TitanDB, Docker, Vagrantx</li>
+            </ul>
+            <div class="title">Repositories</div>
+            <ul>
+              <li><a href="https://github.com/fabiofumarola">Github</a></li>
+              <li><a href="https://bitbucket.org/fabiofumarola">Bitbucket</a></li>
+              <li><a href="http://www.slideshare.net/fabiofumarola1">Slideshare</a></li>
+            <ul>
+          </div>
+        </div>
+      </div>
+      <!-- End Team -->
+
+    </div>
+  </section>
+  <!-- End Section Block (Team) -->
+
+	<!-- End Section Block (About Us) -->
+
+	<section id="syllabus" class="section-block">
+		<h1 class="section-title">Syllabus</h1>
+		<div class="container">
+
+			<div class="row">
+				<div class="span12">
+					<div class="cta">
+						<div class="cta-inner">
+						<h3 class="title">1. Course Introduction (first week)</h3>
+						<p>	Topics: evolution of enterprise computing, from business to decision support (`60, `80, `90, `2000), scaling up databases, data variety, connectivity,
+            P2P knowledge, concurrency, cloud, RDBMS issues, NoSQL databases intro, impedance mismatch, attack of the cluster</p>
+            <a href="slides/1.introduction.pdf"><span class="label label-success">Slides Download</span></a>
+					</div>
+				</div>
+			</div>
+    </div>
+
+    <div class="row">
+      <div class="span12">
+        <div class="cta">
+          <div class="cta-inner">
+          <h3 class="title">2. Linux Containers and Docker (second week)</h3>
+          <p>	Topics: The Evolution of IT, The Solutions: Virtual Machines vs Vagrant vs Docker, Differences,
+            Examples: Vagrant, Boot2Docker, Docker, Docker Hub,
+            Orchestrate Docker, Mesosphere e CoreOS</p>
+          <a href="slides/2.LinuxContainersAndDocker.pdf"><span class="label label-success">Slides Download</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="span12">
+      <div class="cta">
+        <div class="cta-inner">
+        <h3 class="title">3. An Introduction to Git (second week)</h3>
+        <p>	Topics: What is Version Control? (and why use it?), What is Git? (And why Git?), How git works
+          Create a repository, Branches, Add remote, How data is stored </p>
+        <a href="slides/3.Git"><span class="label label-success">Slides Download</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <div class="cta">
+      <div class="cta-inner">
+      <h3 class="title">4. How to manage dependencies (third week)</h3>
+      <p>	Topics: to be announced </p>
+      <a href=""><span class="label label-success">Slides Download</span></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="span12">
+    <div class="cta">
+      <div class="cta-inner">
+      <h3 class="title">5. NoSQL based Data Models</h3>
+      <p>	Topics: to be announced </p>
+      <a href=""><span class="label label-success">Slides Download</span></a>
+    </div>
+  </div>
+</div>
+</div>
+
+	</section>
+
+
+
+	<!-- Section Block (Portfolio) -->
+	<section id="notes" class="section-block">
+		<h1 class="section-title">Notes</h1>
+
+		<!-- Portfolio -->
+		<div class="portfolio clearfix">
+			<div class="container">
+
+				<!-- Items -->
+				<div class="row">
+					<div class="span12">
+						<div class="items-wrap clearfix">
+							<div id="wtl-preview" class="item illustration">
+								<h2>WhereToLive</h2>
+								<a href="http://www.wheretolive.it/" class="item-link">
+									<div class="overlay"></div>
+									<img src="images/work/wtl.jpg" alt="WhereToLive">
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Items -->
+			</div>
+		</div>
+		<!-- End Portfolio -->
+	</section>
+	<!-- End Section Block (Portfolio) -->
+
+	<!-- Section Block (Contact) -->
+	<section id="assignment" class="section-block">
+		<h1 class="section-title">Assignments and Results</h1>
+		<div class="container">
+		</div>
+	</section>
+	<!-- End Section Block (Contact) -->
+
+  <!-- Section Block (Contact) -->
+  <section id="links" class="section-block">
+    <h1 class="section-title">Links</h1>
+    <div class="container">
+    </div>
+  </section>
+  <!-- End Section Block (Contact) -->
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="back-top"></div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						  &copy; 2015. Fabio Fumarola - Tutti i diritti riservati.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- jQuery & Bootstrap -->
+	<script src="assets/js/jquery-2.0.3.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- LinkedIn popUp -->
+	<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+
+	<!-- Maps -->
+	<script src="assets/plugins/map/gmap3.min.js"></script>
+
+	<!-- Cycle Plugin -->
+	<script src="assets/plugins/cycle2/jquery.cycle2.min.js"></script>
+	<script src="assets/plugins/cycle2/jquery.cycle2.swipe.min.js"></script>
+
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
