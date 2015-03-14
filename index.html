@@ -32,19 +32,6 @@
   ga('create', 'UA-60747356-1', 'auto');
   ga('send', 'pageview');
 
-  /**
-* Function that tracks a click on an outbound link in Google Analytics.
-* This function takes a valid URL string as an argument, and uses that URL string
-* as the event label.
-*/
-var trackOutboundLink = function(url) {
-   ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
-     function () {
-     document.location = url;
-     }
-   });
-}
-
 </script>
 <!-- End Google Analytics -->
 
@@ -93,9 +80,9 @@ var trackOutboundLink = function(url) {
               <h5>
           </div>
           <div class="text-center">
-  					<a href="http://www.di.uniba.it/~kdde" onclick="trackOutboundLink(‘http://www.di.uniba.it/~kdde’); return false;"><img class="logo-header" src="images/kdde_logo.png" alt="Knowledge Discover and Data Engineering Group"/><a>
-            <a href="http://www.datatoknowledge.it"><img class="logo-header" src="images/dtk.png"/></a>
-            <a href="http://www.uniba.it/ricerca/dipartimenti/informatica"><img class="logo-header" src="images/logo_uniba.gif"/> </a>
+  					<a href="http://www.di.uniba.it/~kdde" onClick="_gaq.push(['_trackEvent', 'link', 'click', 'kdde']);"><img class="logo-header" src="images/kdde_logo.png" alt="Knowledge Discover and Data Engineering Group"/><a>
+            <a href="http://www.datatoknowledge.it" onClick="_gaq.push(['_trackEvent', 'link', 'click', 'datatoknowledge']);"><img class="logo-header" src="images/dtk.png"/></a>
+            <a href="http://www.uniba.it/ricerca/dipartimenti/informatica" onClick="_gaq.push(['_trackEvent', 'link', 'click', 'informatica']);"><img class="logo-header" src="images/logo_uniba.gif"/> </a>
   				</div>
           <nav id="zw-nav" class="nav">
             <ul>
@@ -387,7 +374,7 @@ var trackOutboundLink = function(url) {
 						<h3 class="title">1. Course Introduction (first week)</h3>
 						<p>	Topics: evolution of enterprise computing, from business to decision support (`60, `80, `90, `2000), scaling up databases, data variety, connectivity,
             P2P knowledge, concurrency, cloud, RDBMS issues, NoSQL databases intro, impedance mismatch, attack of the cluster</p>
-            <a href="slides/1.introduction.pdf" onclick="trackOutboundLink(‘~/slides/1.introduction.pdf’); return false;"><span class="label label-success">Slides Download</span></a>
+            <a href="slides/1.introduction.pdf" onClick="_gaq.push(['_trackEvent', 'slides', 'download', '1.introduction']);"><span class="label label-success">Slides Download</span></a>
 					</div>
 				</div>
 			</div>
@@ -401,7 +388,7 @@ var trackOutboundLink = function(url) {
           <p>	Topics: The Evolution of IT, The Solutions: Virtual Machines vs Vagrant vs Docker, Differences,
             Examples: Vagrant, Boot2Docker, Docker, Docker Hub,
             Orchestrate Docker, Mesosphere e CoreOS</p>
-          <a href="slides/2.LinuxContainersAndDocker.pdf" onclick="trackOutboundLink(‘~/slides/2.LinuxContainersAndDocker.pdf’); return false;"><span class="label label-success">Slides Download</span></a>
+          <a href="slides/2.LinuxContainersAndDocker.pdf" onClick="_gaq.push(['_trackEvent', 'slides', 'download', '2.LinuxContainersAndDocker']);" ><span class="label label-success">Slides Download</span></a>
         </div>
       </div>
     </div>
@@ -414,7 +401,7 @@ var trackOutboundLink = function(url) {
         <h3 class="title">3. An Introduction to Git (second week)</h3>
         <p>	Topics: What is Version Control? (and why use it?), What is Git? (And why Git?), How git works
           Create a repository, Branches, Add remote, How data is stored </p>
-        <a href="slides/3.Git.pdf" onclick="trackOutboundLink(‘~/slides/3.Git.pdf’); return false;" ><span class="label label-success">Slides Download</span></a>
+        <a href="slides/3.Git.pdf"  onClick="_gaq.push(['_trackEvent','slides', 'download', '3.Git']);" ><span class="label label-success">Slides Download</span></a>
       </div>
     </div>
   </div>
