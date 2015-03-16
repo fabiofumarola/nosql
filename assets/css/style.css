@@ -185,7 +185,7 @@ input.placeholder, textarea.placeholder {
 }
 
 .fullscreen-table .fullscreen-row.header {
-	height: 200px;
+	height: 100px;
 }
 
 .fullscreen-table .fullscreen-row.header.header-abs {
@@ -519,7 +519,7 @@ input.placeholder, textarea.placeholder {
 }
 
 .section-block.small {
-	padding: 100px 0;
+	padding: 20px 0;
 }
 
 .section-block .section-title {
