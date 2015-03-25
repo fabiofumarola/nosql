@@ -84,7 +84,7 @@
               <li><a id="btn-about" href="#schedule">Schedule</a></li>
               <li><a id="btn-instructor" href="#instructor">Instructor</a></li>
               <li><a id="btn-syllabus" href="#syllabus">Syllabus</a></li>
-              <li><a id="btn-syllabus" href="#lab">Lab</a></li>
+              <li><a id="btn-syllabus" href="lab.html">Lab</a></li>
               <li><a id="btn-notes" href="#notes">Notes</a></li>
               <li><a id="btn-assignment" href="#assignment">Assignment</a></li>
               <li><a id="btn-links" href="#links">Links</a></li>
@@ -380,7 +380,8 @@
 						<h3 class="title">1. Course Introduction (first week)</h3>
 						<p>	Topics: evolution of enterprise computing, from business to decision support (`60, `80, `90, `2000), scaling up databases, data variety, connectivity,
             P2P knowledge, concurrency, cloud, RDBMS issues, NoSQL databases intro, impedance mismatch, attack of the cluster</p>
-            <a href="slides/1.Introduction.pdf" onClick="_gaq.push(['_trackEvent', 'slides', 'download', '1.Introduction']);"><span class="label label-success">Slides Download</span></a>
+            <a href="http://www.slideshare.net/fabiofumarola1/1introduction-46283802" onClick="_gaq.push(['_trackEvent', 'slides', 'download', '1.Introduction']);"><span class="label label-success">Slides Download</span></a>
+            <!-- <iframe src="//www.slideshare.net/slideshow/embed_code/46283802" width="476" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no"></iframe> -->
 					</div>
 				</div>
 			</div>
@@ -394,7 +395,7 @@
           <p>	Topics: The Evolution of IT, The Solutions: Virtual Machines vs Vagrant vs Docker, Differences,
             Examples: Vagrant, Boot2Docker, Docker, Docker Hub,
             Orchestrate Docker, Mesosphere e CoreOS</p>
-          <a href="slides/2.LinuxContainersAndDocker.pdf" onClick="_gaq.push(['_trackEvent', 'slides', 'download', '2.LinuxContainersAndDocker']);" ><span class="label label-success">Slides Download</span></a>
+          <a href="http://www.slideshare.net/fabiofumarola1/2-linux-container-and-docker" onClick="_gaq.push(['_trackEvent', 'slides', 'download', '2.LinuxContainersAndDocker']);" ><span class="label label-success">Slides Download</span></a>
         </div>
       </div>
     </div>
@@ -407,7 +408,7 @@
         <h3 class="title">3. An Introduction to Git (second week)</h3>
         <p>	Topics: What is Version Control? (and why use it?), What is Git? (And why Git?), How git works
           Create a repository, Branches, Add remote, How data is stored </p>
-        <a href="slides/3.Git.pdf"  onClick="_gaq.push(['_trackEvent','slides', 'download', '3.Git']);" ><span class="label label-success">Slides Download</span></a>
+        <a href="http://www.slideshare.net/fabiofumarola1/3-git-46284350"  onClick="_gaq.push(['_trackEvent','slides', 'download', '3.Git']);" ><span class="label label-success">Slides Download</span></a>
       </div>
     </div>
   </div>
@@ -418,8 +419,8 @@
     <div class="cta">
       <div class="cta-inner">
       <h3 class="title">4. How to manage dependencies (third week)</h3>
-      <p>	Topics: to be announced </p>
-      <a href="" onClick="_gaq.push(['_trackEvent','slides', 'download', '4.Dependencies']);" ><span class="label label-success">Slides Download</span></a>
+      <p>	Topics: How to create a java project without an IDE, How do to manage dependencies on a standard way, How to execute task to build a project</p>
+      <a href="http://www.slideshare.net/fabiofumarola1/4-maven-gradle-and-sbt" onClick="_gaq.push(['_trackEvent','slides', 'download', '4.Dependencies']);" ><span class="label label-success">Slides Download</span></a>
     </div>
   </div>
 </div>
@@ -433,7 +434,7 @@
       <p>	Topics: Data Model Evolution, Relational Model vs Aggregate Model, Consequences of Aggregate Models ,Aggregates and Transactions,
         Aggregates Models on NoSQL, Key-value and Document, Column-Family Stores, Summarizing Aggregate-Oriented databases
       </p>
-      <a href="slides/5.DataModeling1.pdf" onClick="_gaq.push(['_trackEvent','slides', 'download', '5.NoSQL']);"><span class="label label-success">Slides Download</span></a>
+      <a href="http://www.slideshare.net/fabiofumarola1/data-modeling-for-nosql-12" onClick="_gaq.push(['_trackEvent','slides', 'download', '5.NoSQL']);"><span class="label label-success">Slides Download</span></a>
       <br>
       <a href="readingMaterial/Evans03.pdf" onClick="_gaq.push(['_trackEvent','slides', 'download', '5.NoSQL']);"><span class="label label-success">Domain-Driven Design</span></a>
     </div>
@@ -449,7 +450,7 @@
       <p>	Topics:  How to deal with relationships –  Graph Databases, Materialized Views, Modeling for Data Access, Distribu0on Models (Single server, Sharding,
         Master-Slave, Peer-to-Peer)
       </p>
-      <a href="slides/6.DataModeling2.pdf" onClick="_gaq.push(['_trackEvent','slides', 'download', '5.NoSQL']);"><span class="label label-success">Slides Download</span></a>
+      <a href="http://www.slideshare.net/fabiofumarola1/6-data-modeling-for-nosql-22" onClick="_gaq.push(['_trackEvent','slides', 'download', '5.NoSQL']);"><span class="label label-success">Slides Download</span></a>
     </div>
   </div>
 </div>
@@ -468,83 +469,6 @@
 </div>
 
 	</section>
-
-
-  <section id="lab" class="section-block small">
-		<h2 class="section-title">Lab</h2>
-		<div class="container">
-
-			<div class="row">
-				<div class="span12">
-					<div class="cta">
-						<div class="cta-inner">
-						<h3 class="title">1. Vagrant, Docker and Miscellaneous</h3>
-            <p> the lab will be as scheduled at Aula 1A</p>
-            <ul>
-              <li>
-						<p>
-              If you have Windows as Operating System, I suggest you to install <a href="https://chocolatey.org/">Chocolatey</a>.
-              It is a package manager for windows. I know that the idea of package manager is not clear but I will show you why it is awesome.
-            </p>
-            <p>
-            Required installations
-            <ol>
-              <li>We need to install <a href="https://www.virtualbox.org/">Virtual Box<a/>.</li>
-              <li>Do not forget to install <a href="http://download.virtualbox.org/virtualbox/4.3.26/Oracle_VM_VirtualBox_Extension_Pack-4.3.26-98988.vbox-extpack">VM VirtualBox Extension Pack</a></li>
-              <li>We need to install <a href="https://www.vagrantup.com/downloads.html">Vagrant<a/>.</li>
-              <li>We need to install <a href="https://docs.docker.com/machine/">Docker Machine<a/>.</li>
-            </ol>
-            </p>
-            <p>
-                Recommended installations (otherwise, we can do together at the lab)
-                <ol>
-                <li>We need to install <a href="https://docs.docker.com/compose/">Docker Compose<a/>.</li>
-                <li>We need to install <a href="https://docs.docker.com/swarm/">Swarm<a/>.</li>
-                <li>We need to install <a href="https://github.com/docker/compose/blob/master/SWARM.md">Docker + Swarm<a/>.</li>
-              </ol>
-            </p>
-          </li>
-          <li>
-            <p>If you have a Mac, just install <a href="http://brew.sh/">Brew<a/>, and you can install everything via Brew</p>
-            </li>
-            <li>
-            <p>If you have a Unix based personal computer:
-              Required installations
-              <ol>
-                <li>We need to install <a href="https://www.virtualbox.org/">Virtual Box<a/>.</li>
-                <li>Do not forget to install <a href="http://download.virtualbox.org/virtualbox/4.3.26/Oracle_VM_VirtualBox_Extension_Pack-4.3.26-98988.vbox-extpack">VM VirtualBox Extension Pack</a></li>
-                <li>We need to install <a href="https://www.vagrantup.com/downloads.html">Vagrant<a/>.</li>
-                <li>We need to install <a href="https://docs.docker.com/machine/">Docker Machine<a/>.</li>
-              </ol>
-              </p>
-              <p>
-                  Recommended installations (otherwise, we can do together at the lab)
-                  <ol>
-                  <li>We need to install <a href="https://docs.docker.com/compose/">Docker Compose<a/>.</li>
-                  <li>We need to install <a href="https://docs.docker.com/swarm/">Swarm<a/>.</li>
-                  <li>We need to install <a href="https://github.com/docker/compose/blob/master/SWARM.md">Docker + Swarm<a/>.</li>
-                </ol>
-              </p>
-            </li>
-            </p>
-					</div>
-				</div>
-			</div>
-    </div>
-
-    <div class="row">
-      <div class="span12">
-        <div class="cta">
-          <div class="cta-inner">
-          <h3 class="title">2. ...</h3>
-          <p>	</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-	</section>
-
 
 
 	<!-- Section Block (Portfolio) -->
