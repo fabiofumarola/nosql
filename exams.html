@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie lt-ie9 lt-ie8 lt-ie7 ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie lt-ie9 lt-ie8 ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie lt-ie9 ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9" lang="en"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+<!-- @font-face fonts -->
+<link rel="stylesheet" href="assets/css/nexa.css">
+<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+<!-- Main Stylesheet -->
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-60747356-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript" src="assets/js/required.js"></script>
+
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+<link rel="manifest" href="/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+<title>Designing Data Bases with NoSql Data Models</title>
+
+</head>
+
+<body>
+  <!-- Fullscreen Container -->
+	<div class="fullscreen-table">
+		<div class="fullscreen-row header">
+      <header id="zw-header" class="main-header">
+        <div class="main-header-wrap clearfix">
+          <div class="page-header" style="text-align: center">
+              <h2>Designing Data Bases with Advanced Data Models (NoSQL and Spark)</h2>
+              <!-- <h4><a href="http://informatica.di.uniba.it/laurea_produzione3/index.htm">Corso al Terzo anno: Laurea triennale in Informatica e Tecnologie per la Produzione del Software (D.M. 270)</a></h4>
+              <h4><a href="http://www.uniba.it/">Università degli Studi di Bari</a></h4> -->
+          </div>
+
+          <nav id="zw-nav" class="nav">
+            <ul>
+              <li><a id="btn-about" href="index.html">Home</a></li>
+              <li><a id="btn-about" href="#general_info">Guidlines</a></li>
+              <li><a id="btn-about" href="#url_shortener">URL Shortener</a></li>
+              <li><a id="btn-about" href="#cloning_twitter">Cloning Twitter</a></li>
+              <li><a id="btn-about" href="#cloning_flickr">Cloning Flickr</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+		</div>
+    <!-- Section Block (About Us) -->
+  	<section id="subnav" class="">
+      <div class="page-header" style="text-align: center">
+          <h4><a class="invisible" href="http://informatica.di.uniba.it/laurea_produzione3/index.htm">Corso al Terzo anno: Laurea triennale in Informatica e Tecnologie per la Produzione del Software (D.M. 270)</a></h4>
+          <h4><a class="invisible" href="http://www.uniba.it/">Università degli Studi di Bari</a></h4>
+          <a href="http://www.di.uniba.it/~kdde" onClick="_gaq.push(['_trackEvent', 'link', 'click', 'kdde']);"><img class="logo-header" src="images/kdde_logo.png" alt="Knowledge Discover and Data Engineering Group"/><a>
+          <a href="http://www.datatoknowledge.it" onClick="_gaq.push(['_trackEvent', 'link', 'click', 'datatoknowledge']);"><img class="logo-header" src="images/dtk.png"/></a>
+          <a href="http://www.uniba.it/ricerca/dipartimenti/informatica" onClick="_gaq.push(['_trackEvent', 'link', 'click', 'informatica']);"><img class="logo-header" src="images/logo_uniba.gif"/> </a>
+      </div>
+    </section>
+
+
+  <section id="general_info" class="section-block small">
+		<h2 class="section-title">Exams</h2>
+		<div class="container">
+
+			<div class="row">
+				<div class="span12">
+					<div class="cta">
+						<div class="cta-inner">
+                <h3>Result 10/07/2015</h3>
+                  <ul>
+                    <li><a href="./results/progetti 20150710.pdf">projects</a></li>
+                    <li><a href="./results/scritti 20150710.pdf">written exam</a></li>
+                  </ul>
+					</div>
+				</div>
+			</div>
+    </div>
+	</section>
+
+  <section id="url_shortener" class="section-block small">
+    <h2 class="section-title">URL Shortener</h2>
+    <div class="container">
+
+      <div class="row">
+        <div class="span12">
+          <div class="cta">
+            <div class="cta-inner">
+            <p>Internet applications dont always need to be full of features or cover all aspects of your Internet life to be successful. Sometimes it's ok to be simple and just focus on providing a single feature. It doesn't even need to be earth-shatteringly important—it should be just useful enough for its target users.
+              The archetypical and probably most extreme example of this is the URL shortening application or URL shortener.
+              This service offers a very simple but surprisingly useful feature. It provides a shorter URL that represents a normally longer URL.
+              When a user goes to the short URL, he will be redirected to the original URL. For this simple feature, top three most popular URL shortening services (TinyURL, bit.ly, and is.gd)
+              collectively had about 11 million unique visitors, 110 million page views and a reach of about 1% of the Internet in June 2009.
+              In 2008, the most popular URL shortener at that time, TinyURL, was made one of Time Magazine's Top 50 Best Websites.
+              The idea to shorten long and unwieldy URLs into shorter, more manageable ones has been around for some time. 60 characters in an SMS message (Twitter was invented as a service for people to use SMS to tell
+              small groups what they are doing). With Twitter's popularity skyrocketing, the need arose for users to shorten URLs to fit into the 140 characters limit. Originally Twitter used TinyURL as its default URL shortener and this triggered a steep climb in the usage of TinyURL during the early </p> days of Twitter.</p>
+
+            <p>
+              Next, let's do a quick review of why URLs shorteners are so popular and why they attract criticism as well.
+            Here's a quick summary of the benefits:
+            <ul>
+              <li>Create short and easy to remember URLs </li>
+              <li>Allow passing of links in character-limited services such as Twitter </li>
+              <li>Create vanity URLs for marketing purposes </li>
+              <li>Can verbally pass URLs </li>
+            </ul>
+            </p>
+            <h3>Main Features</h3>
+            <p>
+              These are the main features of a URL shortener:
+                <li> Users can create a short URL that represents a long URL </li>
+                <li> Users who visit the short URL will be redirected to the long URL </li>
+                <li> Users can preview a short URL to enable them to see what the long URL is </li>
+                <li> Users can provide a custom URL to represent the long URL </li>
+                <li> Undesirable words are not allowed in the short URL </li>
+                <li> Users are able to view various statistics involving the short URL, including the number of clicks and where the clicks come from (optional, not in TinyURL) </li>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cloning_twitter" class="section-block small">
+    <h2 class="section-title">Cloning Twitter</h2>
+    <div class="container">
+
+      <div class="row">
+        <div class="span12">
+          <div class="cta">
+            <div class="cta-inner">
+            <p>Twitter is a phenomenon that broke onto the Internet scene in 2006. The first Twitter prototype was used as an internal service for Odeo employees in March 2006
+and was later launched publicly into a full-scale version in July 2006. The tipping point for Twitter happened in March 2007 during the South by Southwest (SXSW) music festival in Austin, Texas. During the event, the number of tweets grew from 20,000 per day to 60,000 per day. The Twitter people placed plasma screens in the conference hallways to stream Twitter, panelists and speakers mentioned the service, and the bloggers in attendance touted it. Reaction at the festival was overwhelmingly positive and that was the event generally known to have sparked the Twitter uptake. Twitter won the festival's Web Award and Twitter staff accepted their prize with the remark
+"We'd like to thank you in 140 characters or less. And we just did!"</p>
+            <h3>Main Features</h3>
+            The features are mostly Twitter features.
+            <li> Allow users to post status updates (known as 'tweets' in Twitter) to the public. </li>
+            <li> Allow users to follow and unfollow other users. Users can follow any other user but it is not reciprocal. </li>
+            <li> Allow users to send public messages directed to particular users using the @ replies convention (in Twitter this is known as mentions). </li>
+            <li> Allow users to send direct messages to other users, messages are private to the sender and the recipient user only (direct messages are only to a single recipient). </li>
+            <li> Allow users to re-tweet or forward another user's status in their own status update. </li>
+            <li> Provide a public timeline where all statuses are publicly available for viewing.</li>
+            <li> Provide APIs to allow external applications access.</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cloning_flickr" class="section-block small">
+    <h2 class="section-title">Cloning Flickr</h2>
+    <div class="container">
+
+      <div class="row">
+        <div class="span12">
+          <div class="cta">
+            <div class="cta-inner">
+            <p>Photo sharing is one of the most popular services on the Internet and also one of its most useful services. Basically, photo sharing is about the uploading of
+              digital photos by a user, to be shared with others either publicly or privately.
+              The first photo-sharing applications appeared during the time when the World Wide
+              Web itself was in its infancy, during the mid 1990s, but it was only after the
+              dot-com bust that many of the current crop of photo-sharing applications started.
+              One of the earliest photo-sharing applications is Webshots, which originated from a desktop screensaver software in 1995 and eventually migrated to the World Wide Web. Other popular photo-sharing services include Flickr, Photobucket, ImageShack, SmugMug, Snapfish, and Picasa, Google's photo-sharing service. In the past few years astonishingly (yet perhaps not) an entrant to the photo-sharing market is Facebook. As of writing, Facebook users upload an average of 3 billion photos every month and it is one of the largest photo-sharing applications around, despite being a new entrant.</p>
+
+              <h3>Main Features</h3>
+              Users can upload photos</li>
+              <li> Users can create folders or albums to store photos</li>
+              <li> Users can add title and captions to photos</li>
+              <li> Users can comment on photos</li>
+              <li> Photos can be annotated</li>
+              <li> Photos have friendly URLs</li>
+              <li> Photos can be publicly viewable by all or privately by the user only</li>
+              <li> Photos can be edited and saved back to the site</li>
+              <li> Users can share photos with other users through the site</li>
+              <li> Users can share photos with anonymous users</li>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- End Section Block (Contact) -->
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="back-top"></div>
+
+		<div class="footer-bottom">
+			<div class="container">
+				<div class="row">
+					<div class="span12">
+						  &copy; 2015. Fabio Fumarola - Tutti i diritti riservati.
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+	<!-- jQuery & Bootstrap -->
+	<script src="assets/js/jquery-2.0.3.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- LinkedIn popUp -->
+	<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+
+	<!-- Maps -->
+	<script src="assets/plugins/map/gmap3.min.js"></script>
+
+	<!-- Cycle Plugin -->
+	<script src="assets/plugins/cycle2/jquery.cycle2.min.js"></script>
+	<script src="assets/plugins/cycle2/jquery.cycle2.swipe.min.js"></script>
+
+	<script src="assets/js/plugins.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
