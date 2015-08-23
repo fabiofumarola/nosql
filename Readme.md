@@ -1,7 +1,7 @@
 pbdmng website
 ==============
 
-This website is based on [docker-gen]() and [docker-proxy](). This [tutorial](http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/) explains how they work.
+This website is based on [docker-gen](https://github.com/jwilder/docker-gen) and [docker-proxy](https://github.com/jwilder/docker-gen). This [tutorial](http://jasonwilder.com/blog/2014/03/25/automated-nginx-reverse-proxy-for-docker/) explains how they work.
 
 To restart the website
 
